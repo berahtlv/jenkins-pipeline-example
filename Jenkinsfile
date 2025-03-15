@@ -9,11 +9,6 @@ pipeline {
       }
     }
     stage('Test') {
-      steps {
-       echo "Run tests" 
-      }
-    }
-    stage('Test') {
       parallel {
         stage('Test On Windows') {
           steps {
